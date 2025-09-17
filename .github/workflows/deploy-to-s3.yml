@@ -49,6 +49,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Dar permisos a scripts
+        run: chmod +x ./.github/scripts/*.sh
+
       - name: Build Static Website
         run: ./.github/scripts/build.sh
         shell: bash
