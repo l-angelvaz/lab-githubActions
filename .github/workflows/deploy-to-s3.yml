@@ -6,6 +6,9 @@ on:
       CI_ENV:
         required: true
         type: string
+      CONTENTFUL_ENVIRONMENT:
+        required: true
+        type: string
     secrets:
       AWS_ACCESS_KEY_ID:
         required: true
